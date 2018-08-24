@@ -7,6 +7,10 @@ var kittensName = 'Fluffy ';
 var fullName = kittensName + 'McDougal'; // Outputs Fluffy McDougal
 var secondKittensName = 'Admiral ';
 secondKittensName += 'Snuggles';
+// You can use concatonation to mix strings and numbers, Js will treat the number like a string.
+var numberOfFruit = 6;
+var typeOfFruit = 'bananas';
+var allTheFruit = 'I have ' + numberOfFruit + ' ' + typeOfFruit + '!';
 
 // Variable Types
 // String - var userName = "Jane Lane";
@@ -41,4 +45,5 @@ document.write("Number of Animals: ");
 document.write(numberOfKittens + numberOfPuppies);
 console.log(fullName);
 console.log(secondKittensName); // Outputs 'Admiral Snuggles'
+console.log(allTheFruit);
 // secret comment
