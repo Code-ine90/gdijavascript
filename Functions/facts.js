@@ -108,7 +108,8 @@ function whatIsAwesome2() {
 }
 
 whatIsAwesome2();
-console.log(awesomeGroup2 + ' seems rather neat'); // This wont work as the scope of the variable is local and is not being called in it's parent function
+// console.log(awesomeGroup2 + ' seems rather neat');
+// This wont work as the scope of the variable is local and is not being called in it's parent function
 
 // Boolean variables - These represent logical values true and false.
 
