@@ -121,3 +121,15 @@ console.log(dogsAreBest);
 // Some values are considered 'falsy' and will evaluate to 'false' in a boolean context. Examples of these are 0, null, NaN and ''. Everything else will evaluate as true when converted to a boolean.
 
 // Control Flow
+
+// if statements - are used to decide which lines of code to execute based on conditions
+
+// if (condition) {
+//   statements to execute
+// }
+
+var age = 30;
+
+if (age > 18) {
+  console.log('You are more likely to be an adult!');
+}
