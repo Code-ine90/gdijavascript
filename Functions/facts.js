@@ -133,3 +133,64 @@ var age = 30;
 if (age > 18) {
   console.log('You are more likely to be an adult!');
 }
+
+// a ==
+// b - equal, is true if a is equal to b, can be different types
+//
+// a ===
+// b - identical, is true if a is equal to b, and the same type
+//
+// a !=
+// b - not equal, true if a is not equal to be, can be different types
+//
+// a !==
+// b - not identical, true if a is not equal to b, or they are not the same type
+//
+// a < b - less that, true if a is stricly less than b
+//
+// a > b - greater than, true is a is stricly greater than b
+//
+// a <= b - true if a is less than or equal to b
+//
+// a >= b - greater than or equal to, true if a is greater than or equal to b
+
+// Don't mix up =, == and ===
+
+// else statement - the else provides a set of alternate instructions
+
+var age2 = 28;
+
+if (age2 >= 16) {
+  console.log('Woo, you can do 16 year old stuff!');
+} else {
+  console.log('Sorry ol\' buddy, ol\' pal, but you gots another ' + (16 - age2) + ' years until you can do 16 year old stuff. Maybe one day, if you make it that far *Evil orchestral music plays*');
+}
+
+// If you have multiple conditions you can use the else if statement
+
+var age3 = 28;
+
+if (age3 >= 35) {
+  console.log('You are 35 or over! Woo!');
+} else if (age3 >= 30) {
+  console.log('You are aged 30 - 34, nice. You made it this far, keep on truckin\'!');
+} else if (age3 >= 18) {
+  console.log('You are 18 or over, just going to assume you are out of school and that\'s pretty darn cool, welcome to the real world. Hope you\'re ready!');
+} else {
+  console.log('You are so damn young, you don\'t know how lucky you are, yadda yadda old person talk. Seriously though, make the most of the free resources you have at your disposal and never be afraid to do something. Advice I wish I had when I was young enough to make use of it, and the hope that I would have been smart enough to listen.');
+}
+
+// Logical operators
+
+// a && b - and - true if both a and b are true
+// a || b - or - true if either a or b is true
+// !a - not - true if a is not true...
+
+var age4 = 30;
+var yearsAsCitizen = 30;
+
+if (age4 >= 30 && yearsAsCitizen > 9) {
+  console.log('If you are American you can run for your countries senate, neat right?');
+} else {
+  console.log('If this is America, then you are not eligable to run for the senate. Sad face.');
+}
