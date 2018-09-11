@@ -15,7 +15,7 @@ function callKitten(kittenName) {
 
 // Call the function callKitten and add the argument 'Fluffy'. An argument seems to be similar to a variable, maybe you could use a variable as an argument?
 
-callKitten('Fluffy'); // Outputs 'Come here, Fluffy!' 
+callKitten('Fluffy'); // Outputs 'Come here, Fluffy!' .
 
 // Number function
 
