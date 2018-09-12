@@ -13,3 +13,34 @@ for (count = 1; count <= 108; count++) {
     console.log(count);
   }
 }
+
+// Create an object to hold information on your favorite recipe. It should have properties for:
+//
+// recipeTitle (a string)
+// servings (a number)
+// ingredients (an array of strings)
+// directions (a string)
+//
+//
+// Try displaying some information about your recipe.
+//
+// Bonus: Create a loop to list all the ingredients.
+
+console.log('Task Two');
+
+var favouriteRecipe = {
+  recipeTitle: 'Caramac Cheesecake',
+  servings: 1,
+  ingredients: ['- caramac bars', '- cheese', '- cake'],
+  directions: 'Put the ingredients into a bowl and make it, then cool in fridge until you are hungry, then eat, then wash up, then start again.'
+}
+
+var ingredients = favouriteRecipe.ingredients;
+
+console.log('How to make: ' + favouriteRecipe.recipeTitle);
+console.log('servings: ' + favouriteRecipe.servings);
+console.log('The ingredients are:')
+for (i = 0; i < ingredients.length; i++ ) {
+  console.log(ingredients[i]);
+}
+console.log('Cooking instructions ' +  favouriteRecipe.directions);

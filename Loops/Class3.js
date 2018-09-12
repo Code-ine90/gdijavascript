@@ -88,3 +88,63 @@ for (var i = 0; i < rainbowColors.length; i++) {
 }
 
 // Objects - Objects let us store a collection of properties.
+
+// var objectName = {
+//   propertyName: propertyName,
+//   propertyValue: propertyValue
+// };
+
+var user = {
+  hometown: 'Bishops\'s Stortford, Herts',
+  hair: 'Blond',
+  likes: 'Awesome Stuff',
+  birthday: {month: 5, day: 30}
+};
+
+// You can retrieve values using dot notation.
+
+var usersHomeTown = user.hometown;
+
+console.log(usersHomeTown);
+
+// Or using bracket notation, like in arrays.
+
+var userHairColor = user['hair'];
+
+console.log(userHairColor);
+
+// You can use dot or bracket notation to change properties, add new properties or delete them.
+
+user.hair = 'Light Brown?';
+user.married = false;
+user.male = true;
+delete user.married;
+
+console.log(user);
+
+// Because Arrays can hold any data type, they can also hold objects.
+
+var users = [
+  {name: 'Jason', age: 22},
+  {name: 'Samantha', age: 23}
+];
+
+for (var i = 0; i < users.length; i++) {
+  var user = users[i];
+  console.log(user.name + ' is ' + user.age + ' years old');
+}
+
+// Like other daya types, objects can be passed into functions
+
+var jolene = {
+  age: 21,
+  hairColor: 'Auburn',
+  likes: ['pizza', 'tacos'],
+  birthday: {month: 3, day: 14, year: 1995}
+}
+
+function describeUser(user) {
+  console.log('You are ' + user.age + ' years old with ' + user.hairColor + ' hair.');
+}
+
+describeUser(jolene);
