@@ -4,11 +4,12 @@
 //
 // Finish early? Try using a loop inside a loop to write all the times tables, from 1 to 12.
 console.log ('The tasks start here...')
+console.log('Task One')
 
-var count
+var count;
 
 for (count = 1; count <= 108; count++) {
-  if (count % timeTable === 0) {
+  if (count % 9 === 0) {
     console.log(count);
   }
 }

@@ -42,3 +42,49 @@ for (var i3 = 100; i3 <= 200; i3++) {
     break;
   }
 }
+
+// Arrays - arrays are ordered lists of values
+
+// var arrayName = [value0, value1];
+
+// Arrays can have different types of data in them, and they can be mixed
+
+// the length property can tell you how many things there are in an array
+
+var rainbowColors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+
+console.log(rainbowColors.length);
+
+// You can access items with bracket notation by using the position of the item you want.
+
+var firstColor = rainbowColors[0];
+var lastColor  = rainbowColors[6];
+
+console.log(firstColor + ' and ' + lastColor);
+
+// JS arrays are zero-indexed, so counting starts at 0.
+
+// You can use bracket notation to change an item in an array.
+
+var myFavouriteThings = ['Broccoli', 512, 'Critical Role'];
+
+console.log(myFavouriteThings);
+console.log('Updating incorrect entry...')
+
+myFavouriteThings[0] = 'Caramac Cheesecake';
+
+console.log(myFavouriteThings);
+
+// Arrays do not have a fixed length. You can use push to add something to an array.
+
+myFavouriteThings.push('Reading');
+
+console.log(myFavouriteThings);
+
+// You can use a for loop to easily work with each item in an array.
+
+for (var i = 0; i < rainbowColors.length; i++) {
+  console.log(rainbowColors[i]);
+}
+
+// Objects - Objects let us store a collection of properties.
