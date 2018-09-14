@@ -32,7 +32,10 @@ var favouriteRecipe = {
   recipeTitle: 'Caramac Cheesecake',
   servings: 1,
   ingredients: ['- caramac bars', '- cheese', '- cake'],
-  directions: 'Put the ingredients into a bowl and make it, then cool in fridge until you are hungry, then eat, then wash up, then start again.'
+  directions: 'Put the ingredients into a bowl and make it, then cool in fridge until you are hungry, then eat, then wash up, then start again.',
+  eat: function(recipe) {
+    console.log('Now, get cookin\' and eat some ' + recipe);
+  }
 }
 
 var ingredients = favouriteRecipe.ingredients;
@@ -43,4 +46,5 @@ console.log('The ingredients are:')
 for (i = 0; i < ingredients.length; i++ ) {
   console.log(ingredients[i]);
 }
-console.log('Cooking instructions ' +  favouriteRecipe.directions);
+console.log('Cooking instructions: ' +  favouriteRecipe.directions);
+console.log(favouriteRecipe.eat(favouriteRecipe.recipeTitle));
