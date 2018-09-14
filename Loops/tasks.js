@@ -47,4 +47,4 @@ for (i = 0; i < ingredients.length; i++ ) {
   console.log(ingredients[i]);
 }
 console.log('Cooking instructions: ' +  favouriteRecipe.directions);
-console.log(favouriteRecipe.eat(favouriteRecipe.recipeTitle));
+console.log(favouriteRecipe.eat(favouriteRecipe.recipeTitle)); //  throwing out undefined, look at later -BUG
