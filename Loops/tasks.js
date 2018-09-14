@@ -42,7 +42,7 @@ var ingredients = favouriteRecipe.ingredients;
 
 console.log('How to make: ' + favouriteRecipe.recipeTitle);
 console.log('servings: ' + favouriteRecipe.servings);
-console.log('The ingredients are:')
+console.log('The ingredients are:');
 for (i = 0; i < ingredients.length; i++ ) {
   console.log(ingredients[i]);
 }
