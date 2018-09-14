@@ -3,8 +3,8 @@
 //
 //
 // Finish early? Try using a loop inside a loop to write all the times tables, from 1 to 12.
-console.log ('The tasks start here...')
-console.log('Task One')
+console.log ('The tasks start here...');
+console.log('Task One');
 
 var count;
 
@@ -33,8 +33,8 @@ var favouriteRecipe = {
   servings: 1,
   ingredients: ['- caramac bars', '- cheese', '- cake'],
   directions: 'Put the ingredients into a bowl and make it, then cool in fridge until you are hungry, then eat, then wash up, then start again.',
-  eat: function(recipe) {
-    console.log('Now, get cookin\' and eat some ' + recipe);
+  eat: function(recipeTitle) {
+    console.log('Now, get cookin\' and eat some ' + recipeTitle);
   }
 }
 
@@ -47,4 +47,4 @@ for (i = 0; i < ingredients.length; i++ ) {
   console.log(ingredients[i]);
 }
 console.log('Cooking instructions: ' +  favouriteRecipe.directions);
-console.log(favouriteRecipe.eat(favouriteRecipe.recipeTitle)); //  throwing out undefined, look at later -BUG
+favouriteRecipe.eat(favouriteRecipe.recipeTitle);
