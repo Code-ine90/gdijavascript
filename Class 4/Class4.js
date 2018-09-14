@@ -109,3 +109,32 @@ newParagraph.appendChild(paragraphText);
 
 // Now we add the paragraph to the page
 pageBody.appendChild(newParagraph);
+
+
+// Events
+// An event is an object that is sent when actions take place on your webpage, most often when a user interacts with your webpage.
+//
+//
+// For example, JavaScript creates an event when a user clicks an element.
+
+element.addEventListener('click', function(event) {
+  // code to be executed when user clicks
+});
+
+// Types of Events
+// There are a variety of events. Some of the more common events are:
+//
+// click: Occurs when the user clicks on an element
+// mouseover: Occurs when the pointer is moved onto an element
+// mouseout: Occurs when the pointer is moved off an element
+// keyup: Occurs when the user releases a key
+// load: Occurs when a document has been loaded
+// focus: Occurs when an element gets focus
+// blur: Occurs when an element loses focus
+
+// You can call a function directly from your HTML code
+
+// See line 14 of the HTML page to see the HTML counterpart to this
+function sayHi (event) {
+  alert('Hi!');
+}
