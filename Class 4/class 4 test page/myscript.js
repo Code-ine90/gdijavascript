@@ -7,7 +7,7 @@ function writeResults (result){
 
     //Create a text node, a string of text, to put inside the paragraph.
     var paragraphText = document.createTextNode(result);
-        
+
     //Now, we assemble our results. Put the new text in the new paragraph
     newParagraph.appendChild(paragraphText);
 
@@ -16,3 +16,7 @@ function writeResults (result){
 }
 
 writeResults('Hi there!');
+
+var headerColor = document.getElementById('header');
+
+headerColor.style.backgroundColor = 'red'; // changes the background on the header to red, which is well nice m8
