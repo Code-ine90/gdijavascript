@@ -30,3 +30,15 @@ var paragraphText = document.createTextNode('This code was added to by Stuart Wh
 newParagraph.appendChild(paragraphText);
 
 footer.appendChild(newParagraph);
+
+// Go back to the sample files you downloaded earlier.
+
+// Make some JavaScript code fire after a mouseover event.
+
+footer.addEventListener("mouseover", function(event) {
+  footer.style.backgroundColor = 'blue';
+});
+
+footer.addEventListener("mouseout", function(){
+  footer.style.backgroundColor = '#3B597D';
+});

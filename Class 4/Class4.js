@@ -138,3 +138,21 @@ element.addEventListener('click', function(event) {
 function sayHi (event) {
   alert('Hi!');
 }
+
+// You can also call a function through the addEventListener
+
+// var button = document.getElementById("myBtn");
+//
+// button.addEventListener("click", function (event) {
+//   alert("Hi!");
+// });
+
+// Or you can use
+
+// var button = document.getElementById("myBtn");
+//
+// var sayHi = function (event) {
+//   alert("Hi!");
+// };
+//
+// button.addEventListener("click", sayHi);
