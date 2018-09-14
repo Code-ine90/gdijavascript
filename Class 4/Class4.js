@@ -77,3 +77,35 @@ for (var i = 0; i < listItems.length; i++) {
 
  var pageBody = document.getElementsByTagName('body') [0];
  pageBody.style.color = 'red';
+
+ // See class-4-test-page/myscript.js for the task, I changed the header background to red using getElementById
+
+
+//  Creating New Nodes
+//  The document object also has methods to create nodes from scratch:
+//
+//  document.createElement(tagName);
+//
+// document.createTextNode(text);
+//
+// element.appendChild(element);
+
+// sample page by creating new nodes
+
+var pageBody = document.getElementsByTagName('body') [0];
+
+// Now we create our image tag with attributes.
+var newImg = document.createElement('img');
+newImg.src = 'http://placekitten.com/g/500/200';
+newImg.style.border = '1px solid black';
+
+// Then we add the image to the body
+pageBody.appendChild(newImg);
+
+// Time to create a paragraph tag with some content!
+var newParagraph = document.createElement('p');
+var paragraphText = document.createTextNode('This is a cat. Hmmm. Shame it isn\'t a dog. Sad face.');
+newParagraph.appendChild(paragraphText);
+
+// Now we add the paragraph to the page
+pageBody.appendChild(newParagraph);
