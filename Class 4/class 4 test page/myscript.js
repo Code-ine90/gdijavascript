@@ -20,3 +20,13 @@ writeResults('Hi there!');
 var headerColor = document.getElementById('header');
 
 headerColor.style.backgroundColor = 'red'; // changes the background on the header to red, which is well nice m8
+
+// Create a new paragraph element and add it to a div on your page.
+
+var footer = document.getElementById('footer');
+
+var newParagraph = document.createElement('p');
+var paragraphText = document.createTextNode('This code was added to by Stuart White! He\'s awesome!');
+newParagraph.appendChild(paragraphText);
+
+footer.appendChild(newParagraph);
