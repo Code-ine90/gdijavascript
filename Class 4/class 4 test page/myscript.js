@@ -42,3 +42,16 @@ footer.addEventListener("mouseover", function(event) {
 footer.addEventListener("mouseout", function(){
   footer.style.backgroundColor = '#3B597D';
 });
+
+// Preventing Defaults
+// Elements like links and checkboxes have default behaviors determined by the browser. However, the event object has a built-in method to prevent the default behavior
+//
+// Our anchor link in HTML is on line 20
+//
+// Code to prevent going to link's href on click
+
+var link = document.getElementById("myLink");
+
+link.addEventListener("click", function(event) {
+  event.preventDefault();
+});
