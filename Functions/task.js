@@ -23,8 +23,8 @@ fullName2('Stuart', 'White');
 // Add a return statement to your 'name' function. Use that function to set the value of a variable.
 
 function name() {
-  var firstName3 = 'Graeme';
-  var lastName3 = 'Watt'
+  var firstName3 = 'Jason';
+  var lastName3 = 'Ware'
 
   return firstName3 + ' ' + lastName3;
 }
